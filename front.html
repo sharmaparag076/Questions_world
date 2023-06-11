@@ -1,69 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Registration Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <style>
-        .container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.form-group {
-    margin-bottom: 10px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="d.css">
+    <title>QUESTION WORLD</title>
+    <style>body 
+        {
+        font-family:Times new roman;
+        background-image:url(https://wallpapercave.com/wp/wp4405842.jpg);
+        background-repeat:no-repeat ;
+        color:whitesmoke;
+        background-size: cover;
+        }
+        
+        
+        h1{
+         text-align: center;
+        }
+        
+        
+        form{
+            
+            width:35rem;
+            margin: auto;
+            color:whitesmoke;
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(11, 15, 13, 0.582);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            padding: 20px 25px;
+        }
+        
+        input[type=text], input[type=password]{
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 5px;
+            padding: 15px 18px;
+            box-sizing: border-box;
+          }
+        
+        button {
+            background-color: #030804;
+            color: white;
+            padding: 14px 20px;
+            border-radius: 5px;
+            margin: 7px 0;
+            width: 100%;
+            font-size: 18px;
+          }
+        
+        button:hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
+        
+        .headingsContainer{
+            text-align: center;
+        }
+        
+        .headingsContainer p{
+            color: gray;
+        }
+        .mainContainer{
+            padding: 16px;
+        }
+        
+        
+        .subcontainer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .subcontainer a{
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        
+        span.forgotpsd a {
+            float: right;
+            color: whitesmoke;
+            padding-top: 16px;
+          }
+        
+        .forgotpsd a{
+            color: rgb(74, 146, 235);
+          }
+          
+        .forgotpsd a:link{
+            text-decoration: none;
+          }
+        
+          .register{
+            color: white;
+            text-align: center;
+          }
+          
+          .register a{
+            color: rgb(74, 146, 235);
+          }
+          
+          .register a:link{
+            text-decoration: none;
+          }
+        
+          /* Media queries for the responsiveness of the page */
+          @media screen and (max-width: 600px) {
+            form{
+              width: 25rem;
+            }
+          }
+          
+          @media screen and (max-width: 400px) {
+            form{
+              width: 20rem;
+            }
+          }</style>
 </head>
 <body>
-    <div class="container">
-        <form method="POST" action="{% url 'register' %}">
-            {% csrf_token %}
-            <h2>Registration Form</h2>
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+
+    <h1>Question World</h1>
+    <form action="">
+        <!-- Headings for the form -->
+        <div class="headingsContainer">
+            <h3>Sign in</h3>
+            
+        </div>
+
+        <!-- Main container for all inputs -->
+        <div class="mainContainer">
+            <!-- Username -->
+            <label for="username">Your username</label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <br>
+
+            <!-- Password -->
+            <label for="pswrd">Your password</label>
+            <input type="password" placeholder="Enter Password" name="pswrd" required>
+
+            <!-- sub container for the checkbox and forgot password link -->
+            <div class="subcontainer">
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <p class="forgotpsd"> <a href="forgot_password">Forgot Password?</a></p>
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="form-group">
-                <label for="confirm_password">Confirm Password</label>
-                <input type="password" id="confirm_password" name="confirm_password" required>
-            </div>
-            <button type="submit">Register</button>
-        </form>
-    </div>
+
+
+            <!-- Submit button -->
+            <button type="submit">Login</button>
+
+            <!-- Sign up link -->
+            <p class="register">Not a member?  <a href="register">Register here!</a></p>
+
+        </div>
+    </form>
 </body>
 </html>
