@@ -1,118 +1,166 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Registration Page</title>
-    <style>
-    body {
-      background-image: url('background-image.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      font-family: Arial, sans-serif;
-    }
-
-    h2 {
-      text-align: center;
-      color: #fff;
-    }
-
-    .container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.8);
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
-    input[type="text"],
-    input[type="password"],
-    input[type="email"],
-    select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-    }
-
-    input[type="submit"] {
-      background-color: #4CAF50;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #45a049;
-    }
-
-    @keyframes fade-in {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-
-    .container {
-      animation: fade-in 1s ease-in-out;
-    }
-  </style>
-  <script>
-    function validateForm() {
-      var firstName = document.forms["registrationForm"]["firstName"].value;
-      var lastName = document.forms["registrationForm"]["lastName"].value;
-      var username = document.forms["registrationForm"]["username"].value;
-      var password = document.forms["registrationForm"]["password"].value;
-      var email = document.forms["registrationForm"]["email"].value;
-      var dob = document.forms["registrationForm"]["dob"].value;
-      var gender = document.forms["registrationForm"]["gender"].value;
-
-      if (firstName == "" || lastName == "" || username == "" || password == "" || email == "" || dob == "" || gender == "") {
-        alert("Please fill in all fields");
-        return false;
-      }
-      // Additional validation logic can be added here
-      
-      // If all fields are valid, you can submit the form
-      alert("Registration successful!");
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="d.css">
+    <title>QUESTION WORLD</title>
+    <style>body 
+        {
+        font-family:Times new roman;
+        background-image:url(https://wallpapercave.com/wp/wp4405842.jpg);
+        background-repeat:no-repeat ;
+        color:whitesmoke;
+        background-size: cover;
+        }
+        
+        
+        h1{
+         text-align: center;
+        }
+        
+        
+        form{
+            
+            width:35rem;
+            margin: auto;
+            color:whitesmoke;
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(11, 15, 13, 0.582);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            padding: 20px 25px;
+        }
+        
+        input[type=text], input[type=password]{
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 5px;
+            padding: 15px 18px;
+            box-sizing: border-box;
+          }
+        
+        button {
+            background-color: #030804;
+            color: white;
+            padding: 14px 20px;
+            border-radius: 5px;
+            margin: 7px 0;
+            width: 100%;
+            font-size: 18px;
+          }
+        
+        button:hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
+        
+        .headingsContainer{
+            text-align: center;
+        }
+        
+        .headingsContainer p{
+            color: gray;
+        }
+        .mainContainer{
+            padding: 16px;
+        }
+        
+        
+        .subcontainer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .subcontainer a{
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        
+        span.forgotpsd a {
+            float: right;
+            color: whitesmoke;
+            padding-top: 16px;
+          }
+        
+        .forgotpsd a{
+            color: rgb(74, 146, 235);
+          }
+          
+        .forgotpsd a:link{
+            text-decoration: none;
+          }
+        
+          .register{
+            color: white;
+            text-align: center;
+          }
+          
+          .register a{
+            color: rgb(74, 146, 235);
+          }
+          
+          .register a:link{
+            text-decoration: none;
+          }
+        
+          /* Media queries for the responsiveness of the page */
+          @media screen and (max-width: 600px) {
+            form{
+              width: 25rem;
+            }
+          }
+          
+          @media screen and (max-width: 400px) {
+            form{
+              width: 20rem;
+            }
+          }</style>
 </head>
 <body>
-  <h2>Registration Page</h2>
-  <form name="registrationForm" onsubmit="return validateForm()">
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" name="firstName" required><br><br>
 
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" name="lastName" required><br><br>
+    <h1>Question World</h1>
+    <form action="">
+        <!-- Headings for the form -->
+        <div class="headingsContainer">
+            <h3>Sign in</h3>
+            
+        </div>
 
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required><br><br>
+        <!-- Main container for all inputs -->
+        <div class="mainContainer">
+            <!-- Username -->
+            <label for="username">Your username</label>
+            <input type="text" placeholder="Enter Username" name="username" required>
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required><br><br>
+            <br>
 
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" required><br><br>
+            <!-- Password -->
+            <label for="pswrd">Your password</label>
+            <input type="password" placeholder="Enter Password" name="pswrd" required>
 
-    <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" name="dob" required><br><br>
+            <!-- sub container for the checkbox and forgot password link -->
+            <div class="subcontainer">
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <p class="forgotpsd"> <a href="forgot_password">Forgot Password?</a></p>
+            </div>
 
-    <label for="gender">Gender:</label>
-    <select id="gender" name="gender" required>
-      <option value="">Select</option>
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-      <option value="other">Other</option>
-    </select><br><br>
 
-    <input type="submit" value="Register">
-  </form>
+            <!-- Submit button -->
+            <button type="submit">Login</button>
+
+            <!-- Sign up link -->
+            <p class="register">Not a member?<a href={% url "register" %}>Register here!</a></p>
+
+
+        </div>
+    </form>
 </body>
 </html>
