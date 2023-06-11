@@ -1,0 +1,47 @@
+*{
+   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.a1{
+  background-image: url(https://img.freepik.com/free-photo/beautiful-transparent-blue-leaves_23-2148239778.jpg?w=996&t=st=1682578492~exp=1682579092~hmac=5b114d19f4abe89a110721beffe023be3c6d80fd7331e875a535517b3aa4f843);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.a2 h1{
+  margin: auto;
+text-align: center;
+  padding-top: 50px;
+  width: 100%;
+  height: 10vh;
+  
+}
+.a3 h2{
+ padding-top: 70px;
+  width: 50%;
+  height: 10vh;
+  padding-left: 80px;
+  
+}
+.a3 p{
+  padding-top: 60px;
+  padding-left: 80px;
+  color: blue;
+}
+.a4 h2{
+ padding-top: 70px;
+  width: 50%;
+  height: 10vh;
+  padding-left: 80px;
+  
+}
+.a4 p{
+  padding-top: 70px;
+  padding-left: 80px;
+   color: blue;
+}
+

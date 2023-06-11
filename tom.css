@@ -1,0 +1,186 @@
+*{
+   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.a1{
+   width: 100%;
+   height: 200vh;
+   background-image: url(https://tse1.mm.bing.net/th?id=OIP.VZoUo47GuMNytuoYw6c0HgHaE8&pid=Api&P=0);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+}
+.a2 h2{
+ font-family: "Times New Roman",Times, serif;
+ text-align: center;  
+ font-size: 30px;
+ padding-top: 20px;
+
+}
+.a2 h5{
+ font-family: "Times New Roman",Times, serif;  
+ font-size: 26px;
+ padding-left: 80px;
+}
+.a2 p{
+   padding-top: 10px;
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a3 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a4 p{
+   padding-top: 10px;
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+
+.a5 p{
+   padding-top: 10px;
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a5 h5{
+     font-family: "Times New Roman",Times, serif;  
+ font-size: 26px;
+ padding-left: 80px;
+ padding-top: 25px;
+}
+.a6 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a7 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a8 h5{
+     font-family: "Times New Roman",Times, serif;  
+ font-size: 26px;
+ padding-left: 80px;
+ padding-top: 25px;
+}
+.a8 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a9 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a10 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a11 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a12 h5{
+     font-family: "Times New Roman",Times, serif;  
+ font-size: 26px;
+ padding-left: 80px;
+ padding-top: 25px;
+}
+.a12 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a13 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a14 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a15 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a16 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a17 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a18 h5{
+     font-family: "Times New Roman",Times, serif;  
+ font-size: 26px;
+ padding-left: 80px;
+ padding-top: 25px;
+}
+.a18 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a19 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a20 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a21 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a22 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a23 h5{
+     font-family: "Times New Roman",Times, serif;  
+ font-size: 26px;
+ padding-left: 80px;
+ padding-top: 25px;
+}
+.a23 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a24 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a25 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+}
+.a26 p{
+   display: inline;
+   padding-left: 80px;
+   color: blue;
+   }
